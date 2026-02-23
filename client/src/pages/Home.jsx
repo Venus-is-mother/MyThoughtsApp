@@ -12,7 +12,7 @@ export default function Home() {
 
   const fetchPosts = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/posts");
+      const res = await axios.get("https://mythoughtsapp.onrender.com/api/posts");
       setPosts(res.data);
     } catch (err) {
       console.error(err);

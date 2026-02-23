@@ -16,7 +16,7 @@ export default function Register() {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:5000/api/auth/register", form);
+      await axios.post("https://mythoughtsapp.onrender.com/api/auth/register", form);
       alert("Registered successfully! Now login 💚");
     } catch (err) {
       console.error(err);

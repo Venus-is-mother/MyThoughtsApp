@@ -13,7 +13,7 @@ export default function CommentSection({ postId }) {
   const fetchComments = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/comments/${postId}`
+        `https://mythoughtsapp.onrender.com/api/comments/${postId}`
       );
       setComments(res.data);
     } catch (err) {
@@ -32,7 +32,7 @@ export default function CommentSection({ postId }) {
     }
 
     try {
-      await axios.post("http://localhost:5000/api/comments", {
+      await axios.post("https://mythoughtsapp.onrender.com/api/comments", {
         postId: postId,
         text: text,
         author: user.username

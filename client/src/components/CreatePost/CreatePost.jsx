@@ -10,7 +10,7 @@ export default function CreatePost({ onPostCreated }) {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:5000/api/posts", {
+      await axios.post("https://mythoughtsapp.onrender.com/api/posts", {
         title,
         content,
         author: "Amirah"
