@@ -9,18 +9,34 @@ export default function CreatePost({ onPostCreated }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    const user = JSON.parse(localStorage.getItem("user"));
+
+    if (!user) {
+      alert("Please login first 💚");
+      return;
+    }
+
+    if (!title.trim() || !content.trim()) {
+      alert("Please fill in all fields 🌸");
+      return;
+    }
+
     try {
       await axios.post("https://mythoughtsapp.onrender.com/api/posts", {
         title,
         content,
-        author: "Amirah"
+        author: user.username,
       });
 
       setTitle("");
       setContent("");
-      onPostCreated(); // refresh posts
+
+      if (onPostCreated) {
+        onPostCreated();
+      }
     } catch (err) {
-      console.error(err);
+      console.error("Error creating post:", err);
+      alert("Something went wrong posting 😭");
     }
   };
 
