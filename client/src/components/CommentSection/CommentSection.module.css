@@ -1,0 +1,25 @@
+.commentBox {
+  margin-top: 15px;
+}
+
+input {
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-right: 5px;
+}
+
+button {
+  background: var(--color-accent);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+.comment {
+  background: #fce7f3;
+  padding: 8px;
+  margin-top: 8px;
+  border-radius: 10px;
+}

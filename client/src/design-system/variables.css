@@ -1,0 +1,11 @@
+:root {
+  --color-primary: #f472b6;
+  --color-primary-dark: #db2777;
+
+  --color-accent: #22c55e;
+  --color-bg: #fffafc;
+  --color-brown: #6b4f4f;
+
+  --color-text: #2d2d2d;
+  --radius-lg: 16px;
+}

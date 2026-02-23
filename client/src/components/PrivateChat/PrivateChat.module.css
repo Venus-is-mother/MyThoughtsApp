@@ -1,0 +1,24 @@
+.chatContainer {
+  background: white;
+  padding: 20px;
+  border-radius: var(--radius-lg);
+}
+
+.messages {
+  height: 300px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.received {
+  background: #fce7f3;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+.sent {
+  background: #dcfce7;
+  padding: 8px;
+  border-radius: 12px;
+  text-align: right;
+}

@@ -1,0 +1,20 @@
+.primary {
+  background: var(--color-primary);
+  color: white;
+  padding: 10px 18px;
+  border-radius: var(--radius-lg);
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.primary:hover {
+  background: var(--color-primary-dark);
+}
+
+.accent {
+  background: var(--color-accent);
+  color: white;
+  padding: 8px 16px;
+  border-radius: var(--radius-lg);
+}
